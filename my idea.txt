@@ -1,2 +1,6 @@
 E-commerce
+<<<<<<< HEAD
 Reselling electronics and earning profit
+=======
+Reselling electronics
+>>>>>>> 17c4c852aa5b1ee66788e8eefe8f5a965237c1c2
