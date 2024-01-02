@@ -20,8 +20,8 @@ public class MySqlConnect implements DatabaseConnect {
     public Connection openConnection() {
                 try{
             String username = "root";
-            String password = "@bishnu123";
-            String database = "test";
+            String password = "password";
+            String database = "swing34";
             Class.forName("com.mysql.jdbc.Driver");
             Connection connection;
             connection = DriverManager.getConnection(
