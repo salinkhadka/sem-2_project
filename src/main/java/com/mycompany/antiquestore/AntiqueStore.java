@@ -7,6 +7,8 @@ package com.mycompany.antiquestore;
 //
 //import com.mycompany.antiquestore.model.RegisterPage;
 import com.mycompany.antiquestore.view.LoginScreen;
+import com.mycompany.antiquestore.view.PendingOrder;
+import com.mycompany.antiquestore.view.SalesReport;
 //import com.mycompany.antiquestore.view.RegistrationScreen;
 
 /**
@@ -16,11 +18,17 @@ import com.mycompany.antiquestore.view.LoginScreen;
 public class AntiqueStore {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-        LoginScreen log = new LoginScreen();
-        log.setVisible(true);
-        log.pack();
-        log.setLocationRelativeTo(null);
+//        System.out.println("Hello World!");
+//        LoginScreen log = new LoginScreen();
+//        log.setVisible(true);
+//        log.pack();
+//        log.setLocationRelativeTo(null);
+        
+        PendingOrder po=new PendingOrder();
+        po.setVisible(true);
+        
+        SalesReport sr=new SalesReport();
+        sr.setVisible(true);
         
         
 //        RegistrationScreen rs= new RegistrationScreen();
