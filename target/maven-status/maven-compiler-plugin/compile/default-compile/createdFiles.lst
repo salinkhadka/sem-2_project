@@ -4,6 +4,7 @@ com\mycompany\antiquestore\view\RegistrationScreen$1.class
 com\mycompany\antiquestore\view\abc$1.class
 com\mycompany\antiquestore\view\RegistrationScreen$2.class
 com\mycompany\antiquestore\view\LoginScreen$1.class
+com\mycompany\antiquestore\view\dashboard.class
 com\mycompany\antiquestore\model\LoginPage.class
 com\mycompany\antiquestore\view\abc$2.class
 com\mycompany\antiquestore\view\RegistrationScreen.class
@@ -13,5 +14,6 @@ com\mycompany\antiquestore\view\LoginScreen$3.class
 com\mycompany\antiquestore\view\LoginScreen.class
 com\mycompany\antiquestore\model\RegisterPage.class
 com\mycompany\antiquestore\AntiqueStore.class
+com\mycompany\antiquestore\view\dashboard$1.class
 com\mycompany\antiquestore\view\abc.class
 com\mycompany\antiquestore\view\LoginScreen$2.class
