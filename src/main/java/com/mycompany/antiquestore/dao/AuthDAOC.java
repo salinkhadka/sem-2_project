@@ -4,12 +4,13 @@
  */
 package com.mycompany.antiquestore.dao;
 
-
+import com.mycompany.antiquestore.view.CurrentUser;
 import com.mycompany.antiquestore.database.MySqlConnect;
 import com.mycompany.antiquestore.model.LoginPage;
 import com.mycompany.antiquestore.model.RegisterPage;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
@@ -29,7 +30,7 @@ public class AuthDAOC extends MySqlConnect {
             PreparedStatement ps= null;
             Connection conn = openConnection();
             
-            String sql = "INSERT INTO users(username,password,email) VALUES(?,?,?)";
+            String sql = "INSERT INTO user(username,password,email) VALUES(?,?,?)";
             ps = conn.prepareStatement(sql);
             ps.setString (1,registerPage.getUsername());
             ps.setString(2,registerPage.getPassword());
@@ -54,14 +55,17 @@ public class AuthDAOC extends MySqlConnect {
             PreparedStatement ps= null;
             Connection conn = openConnection();
             
-            String sql = "Select * from users where email = ? and password = ?";
+            String sql = "Select * from user where email = ? and password = ?";
             ps = conn.prepareStatement(sql);
+            
             ps.setString (1,lp.getEmail());
             ps.setString(2,lp.getPassword());
+            
            
             var result = ps.executeQuery();
-               System.out.println(result);
+            
             if(result.next()){
+                CurrentUser.id=result.getInt("id");
                 return true;
             }
             else {

@@ -56,7 +56,7 @@ public class SalesReport extends javax.swing.JFrame {
             String sql = "SELECT p.ID, p.ItemId, i.ItemName, p.Quantity, i.Price, (p.Quantity * i.Price) AS TotalPrice, p.BuyDate " +
                          "FROM pending p " +
                          "JOIN item i ON p.ItemId = i.ID " +
-                         "WHERE p.Status = 1"; // Add the condition to select rows where status is 0
+                         "WHERE p.Status = 1 and p.UserId="+CurrentUser.id; // Add the condition to select rows where status is 0
             System.out.println(sql);
             System.out.println("abc");
             PreparedStatement pst = conn.prepareStatement(sql);

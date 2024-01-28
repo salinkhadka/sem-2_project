@@ -59,15 +59,17 @@ public class PendingOrders extends javax.swing.JFrame {
     try {
         if (conn != null && !conn.isClosed()) {
             String sql = "SELECT p.ID, p.ItemId, i.ItemName, p.Quantity, i.Price, (p.Quantity * i.Price) AS TotalPrice " +
-                         "FROM pending p " +
-                         "JOIN item i ON p.ItemId = i.ID " +
-                         "WHERE p.Status = 0"; // Add the condition to select rows where status is 0
-            System.out.println(sql);
-            System.out.println("abc");
-            System.out.println(sql);
-            System.out.println("abc");
-            PreparedStatement pst = conn.prepareStatement(sql);
-            ResultSet rs = pst.executeQuery();
+             "FROM pending p " +
+             "JOIN item i ON p.ItemId = i.ID " +
+             "WHERE p.Status = 0 AND p.UserID = " + CurrentUser.id;
+
+System.out.println("SQL Query: " + sql);  // Print the SQL query for debugging
+
+PreparedStatement pst = conn.prepareStatement(sql);
+ResultSet rs = pst.executeQuery();
+
+// ... (rest of the code)
+
 
             // Assuming your table has 5 columns (adjust as needed)
             DefaultTableModel df = (DefaultTableModel) TestTable.getModel();

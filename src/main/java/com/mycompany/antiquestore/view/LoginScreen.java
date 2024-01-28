@@ -6,6 +6,7 @@ package com.mycompany.antiquestore.view;
 
 import com.mycompany.antiquestore.dao.AuthDAOC;
 import com.mycompany.antiquestore.model.LoginPage;
+import java.sql.ResultSet;
 import javax.swing.JOptionPane;
 
 /**
@@ -164,6 +165,10 @@ public class LoginScreen extends javax.swing.JFrame {
        var result =   authDao.login(new LoginPage(emailTextField.getText(),passwordTextField.getText()));
        if(result){
            JOptionPane.showMessageDialog(this, "Sucessfully logged in");
+           
+
+           dashboard db=new dashboard();
+           db.setVisible(true);
        }
        else{
            JOptionPane.showMessageDialog(this, "Error");
