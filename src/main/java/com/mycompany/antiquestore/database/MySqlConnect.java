@@ -21,7 +21,7 @@ public class MySqlConnect implements DatabaseConnect {
                 try{
             String username = "root";
             String password = "password";
-            String database = "swing34";
+            String database = "AntiqueEcommerce";
             Class.forName("com.mysql.jdbc.Driver");
             Connection connection;
             connection = DriverManager.getConnection(
@@ -71,8 +71,6 @@ public class MySqlConnect implements DatabaseConnect {
         }catch(SQLException e){
             return -1;
         }
-        
-    
     }
     
 }
