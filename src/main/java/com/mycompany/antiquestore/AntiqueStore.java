@@ -20,11 +20,11 @@ import com.mycompany.antiquestore.view.SalesReport;
 public class AntiqueStore {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-        Login_Page log = new Login_Page();
-        log.setVisible(true);
-        log.pack();
-        log.setLocationRelativeTo(null);
+        // System.out.println("Hello World!");
+        // Login_Page log = new Login_Page();
+        // log.setVisible(true);
+        // log.pack();
+        // log.setLocationRelativeTo(null);
 //        System.out.println("Hello World!");
 //        LoginScreen log = new LoginScreen();
 //        log.setVisible(true);
