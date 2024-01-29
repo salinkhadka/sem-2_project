@@ -2,6 +2,7 @@ com\mycompany\antiquestore\database\DatabaseConnect.class
 com\mycompany\antiquestore\view\PendingOrders$3.class
 com\mycompany\antiquestore\view\CurrentUser.class
 com\mycompany\antiquestore\view\AddItem.class
+com\mycompany\antiquestore\view\dashboard$8.class
 com\mycompany\antiquestore\view\ProductManagement.class
 com\mycompany\antiquestore\Component\Pan$1.class
 com\mycompany\antiquestore\view\LoginScreen$1.class
@@ -15,6 +16,7 @@ com\mycompany\antiquestore\Controller\HomepageController.class
 com\mycompany\antiquestore\view\SalesReport.class
 com\mycompany\antiquestore\view\dashboard$5.class
 com\mycompany\antiquestore\view\AddItem$2.class
+com\mycompany\antiquestore\view\ProductManagement$6.class
 com\mycompany\antiquestore\view\UpdateItem$4.class
 com\mycompany\antiquestore\database\MySqlConnect.class
 com\mycompany\antiquestore\view\AddItem$1.class

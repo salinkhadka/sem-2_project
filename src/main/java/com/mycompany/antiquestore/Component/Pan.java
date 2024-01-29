@@ -67,10 +67,12 @@ public class Pan extends javax.swing.JPanel {
 
             if (updatedRows > 0) {
                 // The update was successful, so insert into the pending table
-                String insertPendingQuery = "INSERT INTO pending (itemID, quantity,Userid) VALUES (?, 1,?)";
+                String insertPendingQuery = "INSERT INTO pending (itemID, quantity, UserID) " +
+                                            "SELECT ?, 1, UserID FROM item WHERE id = ?";
+
                 try (PreparedStatement insertPendingStatement = conn.prepareStatement(insertPendingQuery)) {
                     insertPendingStatement.setInt(1, selectedItemId);
-                    insertPendingStatement.setInt(3,CurrentUser.id);
+                    insertPendingStatement.setInt(2, selectedItemId);
                     insertPendingStatement.executeUpdate();
                 }
             } else {
@@ -82,6 +84,7 @@ public class Pan extends javax.swing.JPanel {
         ex.printStackTrace(); // Handle exceptions appropriately
     }
 }
+
 
 
     /**
