@@ -3,11 +3,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package com.mycompany.antiquestore.view;
-import com.mycompany.antiquestore.Component.Pan;
+import com.mycompany.antiquestore.Component.Pan;g
+import com.mycompany.antiquestore.controller.HomepageController;
+
 import java.awt.GridLayout;
 import com.mycompany.antiquestore.dao.HomepageDao;
 
-import com.mycompany.antiquestore.Controller.HomepageController;
 import com.mycompany.antiquestore.model.ItemModel;
 import java.sql.Connection;
 import java.sql.DriverManager;

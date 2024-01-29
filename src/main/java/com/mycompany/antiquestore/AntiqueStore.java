@@ -37,7 +37,7 @@ public class AntiqueStore {
 //        log.pack();
 //        log.setLocationRelativeTo(null);
         
-        PendingOrder po=new PendingOrder();
+PendingOrders po=new PendingOrders();
         po.setVisible(true);
         
         SalesReport sr=new SalesReport();

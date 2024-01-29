@@ -6,6 +6,7 @@ package com.mycompany.antiquestore.dao;
 
 import com.mycompany.antiquestore.view.CurrentUser;
 import com.mycompany.antiquestore.database.MySqlConnect;
+import com.mycompany.antiquestore.model.LoginPage;
 import com.mycompany.antiquestore.model.Registration_Model;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -24,11 +25,7 @@ public class AuthDAOC extends MySqlConnect {
             PreparedStatement ps= null;
             Connection conn = openConnection();
             
-<<<<<<< HEAD
-            String sql = "INSERT INTO user(username,password,email) VALUES(?,?,?)";
-=======
             String sql = "INSERT INTO users(email,password) VALUES(?,?)";
->>>>>>> 7133a6451a9f692521fe3e4884d6b4a719b9b52f
             ps = conn.prepareStatement(sql);
             ps.setString (1,registerPage.getEmail());
             ps.setString(2,registerPage.getPassword());
@@ -42,7 +39,7 @@ public class AuthDAOC extends MySqlConnect {
                 return true;
             }
         }catch(Exception e){
-<<<<<<< HEAD
+
             System.out.println(e);
             return false;
         }
@@ -73,9 +70,7 @@ public class AuthDAOC extends MySqlConnect {
             }
         }catch(Exception e){
             System.out.println(e);
-=======
-//            System.out.println(e);
->>>>>>> 7133a6451a9f692521fe3e4884d6b4a719b9b52f
+
             return false;
         }
 //        return false;

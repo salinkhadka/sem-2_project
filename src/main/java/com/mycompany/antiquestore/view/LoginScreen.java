@@ -4,6 +4,7 @@
  */
 package com.mycompany.antiquestore.view;
 
+import com.mycompany.antiquestore.RegistrationScreen;
 import com.mycompany.antiquestore.dao.AuthDAOC;
 import com.mycompany.antiquestore.model.LoginPage;
 import java.sql.ResultSet;
@@ -149,7 +150,7 @@ public class LoginScreen extends javax.swing.JFrame {
 
     private void signupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signupActionPerformed
         // TODO add your handling code here:
-        RegistrationScreen sign= new RegistrationScreen();
+        SignUp_Page sign= new SignUp_Page();
         sign.setVisible(true);
         sign.pack();
         sign.setLocationRelativeTo(null);
