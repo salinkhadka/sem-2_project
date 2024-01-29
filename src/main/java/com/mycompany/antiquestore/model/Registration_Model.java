@@ -8,23 +8,19 @@ package com.mycompany.antiquestore.model;
  *
  * @author user
  */
-public class RegisterPage {
+public class Registration_Model {
     private String email;
     private String password;
-    private String username;
+
    
-    public RegisterPage(String email, String password, String username){
+    public Registration_Model(String email, String password){
         this.email = email;
         this.password=password;
-        this.username= username;
     }
     public String getEmail(){
         return this.email;
     }
     public String getPassword(){
         return this.password;
-    }
-    public String getUsername(){
-        return this.username;
     }
 }
