@@ -9,6 +9,8 @@ package com.mycompany.antiquestore;
 import com.mycompany.antiquestore.dao.AuthDAOC;
 import com.mycompany.antiquestore.model.Registration_Model;
 import com.mycompany.antiquestore.view.Login_Page;
+import com.mycompany.antiquestore.view.PendingOrder;
+import com.mycompany.antiquestore.view.SalesReport;
 //import com.mycompany.antiquestore.view.RegistrationScreen;
 
 /**
@@ -23,6 +25,17 @@ public class AntiqueStore {
         log.setVisible(true);
         log.pack();
         log.setLocationRelativeTo(null);
+//        System.out.println("Hello World!");
+//        LoginScreen log = new LoginScreen();
+//        log.setVisible(true);
+//        log.pack();
+//        log.setLocationRelativeTo(null);
+        
+        PendingOrder po=new PendingOrder();
+        po.setVisible(true);
+        
+        SalesReport sr=new SalesReport();
+        sr.setVisible(true);
         
         AuthDAOC auth = new AuthDAOC();
         String username = "username";
